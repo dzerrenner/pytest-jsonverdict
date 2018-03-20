@@ -35,13 +35,15 @@ The content of the output file is as follows::
         }
     }
 
-=================== ============================================== ==================================================
-Field               Type                                           Description
-=================== ============================================== ==================================================
-``start``           python date format: ``%d.%m.%Y %H:%M:%S``      Test suite starting time
-``duration``        float, seconds                                 Duration of the test run
 
-=================== ============================================== ==================================================
+| Field             | Type                                         | Description                                 |
+| ----------------- | -------------------------------------------- | ------------------------------------------- |
+| ``start``         | python date format: ``%d.%m.%Y %H:%M:%S``    | Test suite starting time                    |
+| ``duration``      | float, seconds                               | Duration of the test run                    |
+| ``passed``, ``failed``, ``xpassed``, ``xfailed``, ``errors`` | int | Nuber of tests ending in the corresponding state |
+| ``rerun``         | int                                          | Unused, exists for compatibility reasons    |
+| ``sum``           | int                                          | Sum of all tests                            |
+| ``extra``         | map                                          | Collected ``@pytest.mark.json_extra`` sections (see plugin.py inline docs) |
 
 
 
