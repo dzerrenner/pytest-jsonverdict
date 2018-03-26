@@ -8,6 +8,8 @@ It basically does two things:
 * It counts how many of your tests were passed / failed /xpassed etc.
 * It can add specific test outcomes to the JSON output.
 
+**Notice**: This is a quite crude implementation, for a version with more features, maybe look at: https://github.com/numirias/pytest-json-report
+
 ## Output format and content
 
 
